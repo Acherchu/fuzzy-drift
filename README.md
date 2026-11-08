@@ -1,6 +1,6 @@
 # FUZZY DRIFT
 
-Drift fuzzy carts, battle bots and real players online. **[Download for Windows](https://acherchu.github.io/fuzzy-drift/)**
+Drift fuzzy carts, battle bots and real players online. **[Play in your browser](https://acherchu.github.io/fuzzy-drift/play/)** or **[download for Windows](https://acherchu.github.io/fuzzy-drift/)**
 (or grab `FuzzyDrift-Windows.zip` from the [latest release](https://github.com/Acherchu/fuzzy-drift/releases/latest)).
 
 `server.json` holds the address of the FUZZY DRIFT game server (it changes whenever the server's

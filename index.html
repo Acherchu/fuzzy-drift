@@ -56,6 +56,12 @@
   }
   .download:hover { transform: translateY(-3px) scale(1.03); }
   .download:active { transform: translateY(4px); border-bottom-width: 4px; }
+  .buttons { display: flex; gap: 18px; justify-content: center; flex-wrap: wrap; }
+  .download.play { background: #2fbf71; border-bottom-color: #136b3c; }
+  .warn { background: var(--panel); border: 3px solid var(--yellow); border-radius: 20px; padding: 20px 26px; margin: 34px 0 0; text-align: left; }
+  .warn h2 { font-family: "Lilita One", sans-serif; font-weight: 400; margin: 0 0 10px; color: var(--yellow); font-size: 26px; }
+  .warn ol { margin: 0; padding-left: 22px; line-height: 1.8; }
+  .warn p { margin: 10px 0 0; color: var(--muted); }
   .small { color: var(--muted); font-size: 15px; margin-top: 14px; }
   .shots { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 40px 0; }
   .shots img { width: 100%; display: block; border-radius: 18px; border: 4px solid var(--panel); box-shadow: 0 10px 24px rgba(0,0,0,.35); }
@@ -79,9 +85,22 @@
   <header>
     <h1>FUZZY DRIFT</h1>
     <p class="tag">Drift fuzzy carts, ram your friends, watch them explode.</p>
-    <a class="download" id="dl" href="https://github.com/Acherchu/fuzzy-drift/releases/latest/download/FuzzyDrift-Windows.zip">DOWNLOAD FOR WINDOWS</a>
-    <p class="small"><span id="ver">Version 1.0.0</span> &middot; free &middot; unzip and double-click <b>FuzzyDrift.exe</b><br>
-      If Windows says "protected your PC", click <b>More info</b> &rarr; <b>Run anyway</b>.</p>
+    <div class="buttons">
+      <a class="download play" href="play/">PLAY IN BROWSER</a>
+      <a class="download" id="dl" href="https://github.com/Acherchu/fuzzy-drift/releases/latest/download/FuzzyDrift-Windows.zip">DOWNLOAD FOR WINDOWS</a>
+    </div>
+    <p class="small"><span id="ver">Version 1.0.1</span> &middot; free &middot; <b>Play in browser</b>: no download, works in Chrome / Edge on a computer<br>
+      <b>Download</b>: unzip the whole folder, then double-click <b>FuzzyDrift.exe</b> (a bit sharper and smoother)</p>
+    <div class="warn">
+      <h2>Windows says it's a virus?</h2>
+      <p style="margin-top:0">It isn't - Windows warns about every small game that isn't signed by a big company. Here's how to play anyway:</p>
+      <ol>
+        <li>If your browser says the file <b>"isn't commonly downloaded"</b>: open the downloads list, click the <b>...</b> next to it and choose <b>Keep</b>.</li>
+        <li>Unzip it: right-click the zip &rarr; <b>Extract All</b>.</li>
+        <li>Double-click <b>FuzzyDrift.exe</b>. If a blue box says <b>"Windows protected your PC"</b>, click <b>More info</b>, then <b>Run anyway</b>.</li>
+      </ol>
+      <p>Rather not? Just hit <b>PLAY IN BROWSER</b> - nothing to download at all.</p>
+    </div>
   </header>
 
   <div class="shots">
@@ -105,7 +124,7 @@
       <li><kbd>Space</kbd> jump</li>
       <li><kbd>E</kbd> get in / out of a cart</li>
       <li><kbd>B</kbd> find a 1v1 in the arena</li>
-      <li><kbd>F5</kbd> first / third person</li>
+      <li><kbd>V</kbd> first / third person</li>
       <li>Mouse: look (click to lock, <kbd>Esc</kbd> to free)</li>
     </ul>
   </div>
